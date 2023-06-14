@@ -1,58 +1,79 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 @font-face {
   font-family: Norse-Bold;
   src: local(Norse-Bold), url('assets/fonts/Norse-Bold.otf');
 }
 
 body {
-  height: 100vh;
   display: flex;
-  a
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
 }
 
 .container {
-  position: relative;
-  width: 100%
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width:90%;
+  height: 700px;
   border: solid 2px red;
-  
+  overflow: hidden;
 }
 
 .fotoCont {
- 
-  width:25rem;
-	height:50rem;
+  background-image: url('Public/halie-west-25xggax4bSA-unsplash.jpg');
+  width: 50rem;
+  height: 100%;
+  background-size: cover;
 }
 
-.form {
+.formAndText {
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
+  margin-left: 1rem;
+}
+
+.formContainer {
+  flex-direction: column;
   
-  max-width: 200px;
+  margin-left: 1rem;
 }
 
-.foto {
-  position: absolute;
-  width:25rem;
-	height:50rem;
-}
+.logoEnome {
 
-.logo {
   width: 30px;
+  height: 30px;
   background-color: black;
   opacity: 0.33;
   
-  
 }
 
-.logoEnome p {
+.logoEnome img {
+  max-height: 100%;
+}
+
+.logoEnome h1 {
   font-family: Norse-Bold;
   background-color: black;
   opacity: 0.33;
   color: white;
+}
+
+.action button {
+  background: #596D48;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold; 
+}
+
+a {
+  color: #596D48;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 //colocar como column
